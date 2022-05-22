@@ -1,0 +1,118 @@
+:root {
+  --DarkPink: #4d212e;
+  --LightPink: #794b58;
+  --newPink: #fdd3dfe5;
+  --newColor: #140d0faf;
+  --White: #fff;
+  --Black: #000;
+  --Red: rgba(202, 9, 9, 0.719);
+  --Green: rgb(27, 145, 115);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: linear-gradient(
+    to right bottom,
+    var(--newPink),
+    var(--LightPink)
+  );
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-wrapper {
+  background-color: var(--DarkPink);
+  min-width: 480px;
+  min-height: 650px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 3px 6px 40px var(--Black);
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  color: var(--White);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.task-input {
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: var(--White);
+  background-color: var(--newColor);
+  border: 1px solid var(--LightPink);
+  border-radius: 10px;
+}
+
+.button-add {
+  width: 70px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: var(--newPink);
+  cursor: pointer;
+}
+
+.list-item {
+  display: flex;
+  margin: 20px 0;
+  border: 1px solid var(--White);
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 30px;
+}
+
+.button-complete,
+.button-delete {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.button-complete {
+  color: var(--Red);
+  margin-left: 20px;
+}
+
+.button-delete {
+  color: var(--Green);
+  margin-left: 30px;
+}
+
+.complete {
+  text-decoration-style: solid;
+  text-decoration-line: line-through;
+  text-decoration-color: var(--LightPink);
+  opacity: 0.6;
+}
+
+.list {
+  width: 220px;
+  background-color: var(--DarkPink);
+  border: none;
+  color: var(--White);
+  font-size: 20px;
+  padding-left: 10px;
+  margin-right: 15px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
